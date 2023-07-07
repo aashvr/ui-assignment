@@ -1,72 +1,191 @@
 body {
     padding: 0;
     margin: 0;
+    /* background-color: #e8e8e8; */
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #f2f2f2;
-  }
-  
-  .navbar-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-links li {
-    display: inline-block;
-  }
-  
-  .navbar-links li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #000;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
 
-  }
-  
-  .menu-button {
-    display: none;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  /* Media query for mobile devices */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-wrap: wrap;
+.about-section {
+    /* margin-top: 200px; */
+    padding-top: 120px;
+    /* padding-bottom: 120px; */
+    padding-right: 190px;
+    padding-left: 190px;
+    /* background-color: #; */
+    display: flex;
+    
+}
+
+.about-section .left-text {
+    max-width: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #222222;
+    letter-spacing: normal;
+    line-height: 44px;
+}
+
+.about-section p {
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #777777;
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 26px;
+}
+
+.about-section .stats-list{
+    /* margin: 20px; */
+    margin-top: 40px;
+    list-style: none;
+    display: flex;
+}
+
+ .stats-box {
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 0.8px solid rgb(238, 238, 238);
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.stats-box svg {
+    width: 20px;
+    height: 20px;
+}
+
+.stats-box h3 {
+    margin-top: 18px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #222222;
+}
+
+.stats-box p {
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: normal;
+
+}
+
+.about-section .right-visual {
+   width: 100%;
+   margin-top: 40px;
+}
+
+.skill-comp {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.skill-comp .skill-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222222;
+    letter-spacing: normal;
+    line-height: 29px;
+}
+
+.skill-comp .skill-bar {
+    height: 20px;
+    border-radius: 10px;
+    width: 85%;
+    border: 0.8px solid rgb(238, 238, 238);
+}
+
+.skill-bar .skill-bar-none {
+    margin: 5px;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+}
+
+.skill-comp .skill-bar-fill {
+    height: 10px;
+    border-radius: 10px;
+    /* width: 85%; */
+    background: linear-gradient(to right, rgba(122,127,251,255), rgba(136,240,251,255));
+}
+
+.ae {
+    width: 85%;
+}
+
+.ps {
+    width: 90%;
+}
+
+ .illus {
+    width: 70%;
+}
+
+.sublime {
+    width: 95%;
+}
+
+.sketch {
+    width: 75%;
+}
+
+
+@media (max-width: 768px) {
+    .about-section {
+        display: block;
+        padding: 0;
+        padding-top: 40px;
     }
-  
-    .navbar-logo {
-      order: 1;
-      margin-right: auto;
-      margin-bottom: 10px;
+
+    .about-section .left-text {
+        max-width: 100%;
+        font-size: 12px;
+        /* margin-left: 15px; */
+        /* margin-right: 15px; */
+        
     }
-  
-    .navbar-links {
-      display: none;
-      order: 3;
+
+    .about-section .stats-list {
+        display: block;
     }
-  
-    .navbar-links li {
-      margin-bottom: 5px;
+
+    .stats-box {
+        /* padding: 20px; */
+        padding-left: 25px;
+        padding-right: 25px;
+        border: 0.8px solid rgb(238, 238, 238);
+        border-radius: 5px;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
-  
-    .menu-button {
-      display: block;
-      order: 2;
-      padding: 10px;
+    .stats-box h3 {
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #222222;
     }
-  
-    .show-navbar-links {
-      display: block !important;
+    
+    .stats-box p {
+        /* margin-top: 10px; */
+        font-size: 15px;
+        letter-spacing: normal;
     }
-  }
-  
+
+    
+.about-section .right-visual {
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+ }
+
+
+
+
+}
+
+
+

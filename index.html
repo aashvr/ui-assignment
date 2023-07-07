@@ -11,15 +11,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
 
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Meet Me</title>
   </head>
   <body>
     <nav class="navbar">
       <div class="navbar-logo">
-        <h3>MEETME</h3>
+        <h3 class="logo">MEETME</h3>
       </div>
       <ul class="navbar-links" id="navbarLinks">
         <li><a href="#">Home</a></li>
@@ -32,152 +38,159 @@
       <div class="menu-button" id="menuButton">&#9776;</div>
     </nav>
     <section>
-      <div class="header">
-        <div class="hero">
-          <div class="hero-content">
-            <img src="images/personal.webp" alt="" />
-            <div class="hero-desc">
-              <p class="hero-desc-title">
-                Hello Everybody, I am <br />
-                <br />
-                <span class="name">Donald McKinney</span>
-                <br />
-                <br />
-                <span class="designation">Junior UI/UX Developer</span>
-              </p>
-              <p class="one-liner">
-                You will begin to realise why this exercise is called the
-                Dickens Pattern (with reference to the ghost showing Scrooge
-                some different futures)
-              </p>
-              <br />
-              <br />
-              <div class="info">
-                <ul>
-                  <li>
-                    <svg class="lnr lnr-calendar-full icons">
-                      <use xlink:href="#lnr-calendar-full"></use>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <div class="container child">
+                <div class="content">
+                  <img
+                    src="images/personal.webp"
+                    alt=""
+                    class="img"
+                  />
+                  <div class="hero-desc">
+                    <p class="hero-desc-title">
+                      Hello Everybody, I am <br />
+                      <span class="name">Donald McKinney</span>
+                      <br />
+                      <h3 class="designation">Junior UI/UX Developer</h3>
+                    </p>
+                    <p class="one-liner">
+                      You will begin to realise why this exercise is called the
+                      Dickens Pattern (with reference to the ghost showing Scrooge
+                      some different futures)
+                    </p>
+                    <!-- <br /> -->
+                    <div class="info">
+                      <div>
+                        <div class="info-row">
+                          <svg class="lnr lnr-calendar-full icons">
+                            <use xlink:href="#lnr-calendar-full"></use>
+                          </svg>
+                          <div>31st December, 1992</div>
+                        </div>
+                        <div class="info-row">
+                          <svg class="lnr lnr-phone-handset icons">
+                            <use xlink:href="#lnr-phone-handset"></use>
+                          </svg>
+                          <div>44 (012) 6954 783</div>
+                        </div>
+                        <div class="info-row">
+                          <svg class="lnr lnr-envelope icons">
+                            <use xlink:href="#lnr-envelope"></use>
+                          </svg>
+                          <div>businessplan@donald</div>
+                        </div>
+                        <div class="info-row">
+                          <svg class="lnr lnr-home icons">
+                            <use xlink:href="#lnr-home"></use>
+                          </svg>
+                          <div>Santa monica bullevard</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="socials"> 
+                        <div class="icon"><i class="fa-brands fa-facebook-f logo"></i></div>
+                        <div class="icon"><i class="fa-brands fa-twitter logo"></i></div>
+                        <div class="icon"><i class="fa-brands fa-linkedin-in logo"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content of the child container goes here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    
+      <section>
+        <div class="container-fluid about-section">
+          <div class="left-text">
+            <h2>ABOUT MYSELF</h2>
+            <p>
+              inappropriate behavior is often laughed off as “boys will be boys,”
+              women face higher conduct standards especially in the workplace.
+              That’s why it’s crucial that, as women, our behavior on the job is
+              beyond reproach. inappropriate behavior is often laughed.
+            </p>
+            <div class="stats">
+              <div class="stats-list">
+                <div>
+                  <div class="stats-box">
+                    <svg class="lnr lnr-database">
+                      <use xlink:href="#lnr-database"></use>
                     </svg>
-                    <div>31st December, 1992</div>
-                  </li>
-                  <li>
-                    <svg class="lnr lnr-phone-handset icons">
-                      <use xlink:href="#lnr-phone-handset"></use>
+                    <h3>$2.5M</h3>
+                    <p>Total Donation</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="stats-box">
+                    <svg class="lnr lnr-book">
+                      <use xlink:href="#lnr-book"></use>
                     </svg>
-                    <div>44 (012) 6954 783</div>
-                  </li>
-                  <li>
-                    <svg class="lnr lnr-envelope icons">
-                      <use xlink:href="#lnr-envelope"></use>
+                    <h3>1465</h3>
+                    <p>Total Projects</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="stats-box">
+                    <svg class="lnr lnr-users">
+                      <use xlink:href="#lnr-users"></use>
                     </svg>
-                    <div>businessplan@donald</div>
-                  </li>
-                  <li>
-                    <svg class="lnr lnr-home icons">
-                      <use xlink:href="#lnr-home"></use>
-                    </svg>
-                    <div>Santa monica bullevard</div>
-                  </li>
-                </ul>
-              </div>
-              <div class="socials">
-                <ul>
-                  <li><i class="fa-brands fa-facebook-f"></i></li>
-                  <li><i class="fa-brands fa-twitter"></i></li>
-                  <li><i class="fa-brands fa-linkedin-in"></i></li>
-                </ul>
+                    <h3>3965</h3>
+                    <p>Total Volunteers</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!--
-    <section class="about-section">
-      <div class="left-text">
-        <h2>ABOUT MYSELF</h2>
-        <p>
-          inappropriate behavior is often laughed off as “boys will be boys,”
-          women face higher conduct standards especially in the workplace.
-          That’s why it’s crucial that, as women, our behavior on the job is
-          beyond reproach. inappropriate behavior is often laughed.
-        </p>
-        <div class="stats">
-          <div class="stats-list">
-            <div>
-              <div class="stats-box">
-                <svg class="lnr lnr-database">
-                  <use xlink:href="#lnr-database"></use>
-                </svg>
-                <h3>$2.5M</h3>
-                <p>Total Donation</p>
+          <div class="right-visual">
+            <div class="skill-comp">
+              <div class="skill-title">After Effects 85%</div>
+              <div class="skill-bar">
+                <div class="skill-bar-none">
+                  <div class="skill-bar-fill ae"></div>
+                </div>
               </div>
             </div>
-            <div>
-              <div class="stats-box">
-                <svg class="lnr lnr-book">
-                  <use xlink:href="#lnr-book"></use>
-                </svg>
-                <h3>1465</h3>
-                <p>Total Projects</p>
+            <div class="skill-comp">
+              <div class="skill-title">Photoshop 90%</div>
+              <div class="skill-bar">
+                <div class="skill-bar-none">
+                  <div class="skill-bar-fill ps"></div>
+                </div>
               </div>
             </div>
-            <div>
-              <div class="stats-box">
-                <svg class="lnr lnr-users">
-                  <use xlink:href="#lnr-users"></use>
-                </svg>
-                <h3>3965</h3>
-                <p>Total Volunteers</p>
+            <div class="skill-comp">
+              <div class="skill-title">Illustrator 70%</div>
+              <div class="skill-bar">
+                <div class="skill-bar-none">
+                  <div class="skill-bar-fill illus"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-comp">
+              <div class="skill-title">Sublime 95%</div>
+              <div class="skill-bar">
+                <div class="skill-bar-none">
+                  <div class="skill-bar-fill sublime"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-comp">
+              <div class="skill-title">Sketch 75%</div>
+              <div class="skill-bar">
+                <div class="skill-bar-none">
+                  <div class="skill-bar-fill sketch"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="right-visual">
-        <div class="skill-comp">
-          <div class="skill-title">After Effects 85%</div>
-          <div class="skill-bar">
-            <div class="skill-bar-none">
-              <div class="skill-bar-fill ae"></div>
-            </div>
-          </div>
-        </div>
-        <div class="skill-comp">
-          <div class="skill-title">Photoshop 90%</div>
-          <div class="skill-bar">
-            <div class="skill-bar-none">
-              <div class="skill-bar-fill ps"></div>
-            </div>
-          </div>
-        </div>
-        <div class="skill-comp">
-          <div class="skill-title">Illustrator 70%</div>
-          <div class="skill-bar">
-            <div class="skill-bar-none">
-              <div class="skill-bar-fill illus"></div>
-            </div>
-          </div>
-        </div>
-        <div class="skill-comp">
-          <div class="skill-title">Sublime 95%</div>
-          <div class="skill-bar">
-            <div class="skill-bar-none">
-              <div class="skill-bar-fill sublime"></div>
-            </div>
-          </div>
-        </div>
-        <div class="skill-comp">
-          <div class="skill-title">Sketch 75%</div>
-          <div class="skill-bar">
-            <div class="skill-bar-none">
-              <div class="skill-bar-fill sketch"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+      </section>
+<!--
     <section class="offerings">
       <div class="heading">
         <h2>OFFERINGS TO MY CLIENTS</h2>
@@ -393,4 +406,8 @@
       navbarLinks.classList.toggle("show-navbar-links");
     });
   </script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Font Awesome JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </html>

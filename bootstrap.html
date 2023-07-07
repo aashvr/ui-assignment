@@ -3,30 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="temp.css" rel="stylesheet" />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar-logo">
-        <!-- <img src="logo.png" alt="Logo" /> -->
-        MEETME
-      </div>
-      <ul class="navbar-links" id="navbarLinks">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="menu-button" id="menuButton">&#9776;</div>
-    </nav>
-  </body>
-  <script>
-    var menuButton = document.getElementById("menuButton");
-    var navbarLinks = document.getElementById("navbarLinks");
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
-    menuButton.addEventListener("click", function () {
-      navbarLinks.classList.toggle("show-navbar-links");
-    });
-  </script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="temp.css" />
+
+    <title>Responsive Header</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="container-fluid about-section">
+        <div class="left-text">
+          <h2>ABOUT MYSELF</h2>
+          <p>
+            inappropriate behavior is often laughed off as “boys will be boys,”
+            women face higher conduct standards especially in the workplace.
+            That’s why it’s crucial that, as women, our behavior on the job is
+            beyond reproach. inappropriate behavior is often laughed.
+          </p>
+          <div class="stats">
+            <div class="stats-list">
+              <div>
+                <div class="stats-box">
+                  <svg class="lnr lnr-database">
+                    <use xlink:href="#lnr-database"></use>
+                  </svg>
+                  <h3>$2.5M</h3>
+                  <p>Total Donation</p>
+                </div>
+              </div>
+              <div>
+                <div class="stats-box">
+                  <svg class="lnr lnr-book">
+                    <use xlink:href="#lnr-book"></use>
+                  </svg>
+                  <h3>1465</h3>
+                  <p>Total Projects</p>
+                </div>
+              </div>
+              <div>
+                <div class="stats-box">
+                  <svg class="lnr lnr-users">
+                    <use xlink:href="#lnr-users"></use>
+                  </svg>
+                  <h3>3965</h3>
+                  <p>Total Volunteers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-visual">
+          <div class="skill-comp">
+            <div class="skill-title">After Effects 85%</div>
+            <div class="skill-bar">
+              <div class="skill-bar-none">
+                <div class="skill-bar-fill ae"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-comp">
+            <div class="skill-title">Photoshop 90%</div>
+            <div class="skill-bar">
+              <div class="skill-bar-none">
+                <div class="skill-bar-fill ps"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-comp">
+            <div class="skill-title">Illustrator 70%</div>
+            <div class="skill-bar">
+              <div class="skill-bar-none">
+                <div class="skill-bar-fill illus"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-comp">
+            <div class="skill-title">Sublime 95%</div>
+            <div class="skill-bar">
+              <div class="skill-bar-none">
+                <div class="skill-bar-fill sublime"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-comp">
+            <div class="skill-title">Sketch 75%</div>
+            <div class="skill-bar">
+              <div class="skill-bar-none">
+                <div class="skill-bar-fill sketch"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  </body>
 </html>

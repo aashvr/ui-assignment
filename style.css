@@ -68,7 +68,8 @@ body {
           flex-wrap: wrap;
           background: #000000;
           padding: 20px;
-          padding-right: 80px;
+          align-items: center;
+          /* padding-right: 80px; */
         }
       
         nav .navbar-logo {
@@ -163,6 +164,7 @@ nav ul li a {
 .hero-content img {
     border-radius: 10px;
     margin-right: 125px;
+    max-width: fit-content;
 }
 
 .hero-desc  {
