@@ -9,19 +9,100 @@ body {
     background-color: #fbfbfb;
 }
 
-.header {
-    background-image: linear-gradient(to right, rgba(122,127,251,255), rgba(136,240,251,255));
-    height: 560px;
-}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgba(122, 127, 251, 255), rgba(136, 240, 251, 255));
+    /* padding: 40px 175px 40px 175px; */
+    padding: 40px;
+    padding-left: 175px;
+    padding-right: 175px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    /* padding: 10px; */
+    /* align-items: center; */
+  }
+  
+  nav .navbar-logo {
+    padding: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    display: inline-block;
+  }
+  
+  .navbar-links li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
 
-nav {
+  }
+  
+  .menu-button {
+    display: none;
+    font-size: 20px;
+    font-weight: 800;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+    /* Media query for mobile devices */
+    @media (max-width: 768px) {
+        .navbar {
+          flex-wrap: wrap;
+          background: #000000;
+          padding: 20px;
+          padding-right: 80px;
+        }
+      
+        nav .navbar-logo {
+          order: 1;
+          margin-right: auto;
+          /* margin-bottom: 10px; */
+        }
+      
+        .navbar-links {
+          display: none;
+          order: 3;
+        }
+      
+        .navbar-links li {
+          margin-bottom: 5px;
+        }
+      
+        .menu-button {
+          display: block;
+          order: 2;
+          /* padding-right: 80px; */
+          /* padding: 10px; */
+        }
+      
+        .show-navbar-links {
+          display: block !important;
+        }
+      }
+
+
+/* nav {
     background-image: linear-gradient(to right, rgba(122,127,251,255), rgba(136,240,251,255));
     display: flex;
     justify-content: space-between;
-    /* margin-left: 175px;
-    margin-right: 175px;
-    padding-top: 40px;
-    margin-bottom: 80px; */
     padding-left: 175px;
     padding-right: 175px;
     padding-top: 40px;
@@ -55,6 +136,11 @@ nav ul li a {
     font-size: 12px;
     letter-spacing: normal;
     font-weight: 600;
+} */
+
+.header {
+    background-image: linear-gradient(to right, rgba(122,127,251,255), rgba(136,240,251,255));
+    height: 560px;
 }
 
 .hero {
