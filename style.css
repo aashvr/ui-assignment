@@ -385,10 +385,6 @@ nav ul li a {
     
 }
 
-.projects .heading {
-    justify-self: center;
-    /* font-size: 36px; */
-}
 
 .offerings .heading {
     justify-self: center;
@@ -465,6 +461,12 @@ nav ul li a {
     background-color: #ffffff;
     text-align: center;
 }
+
+.projects .heading {
+    justify-self: center;
+    /* font-size: 36px; */
+}
+
 
 .projects .tab-headings {
     display: flex;
