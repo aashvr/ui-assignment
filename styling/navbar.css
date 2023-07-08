@@ -1,0 +1,112 @@
+
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgba(122, 127, 251, 255), rgba(136, 240, 251, 255));
+    /* padding: 40px 175px 40px 175px; */
+    padding: 40px;
+    padding-left: 175px;
+    padding-right: 175px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    /* padding-bottom: 10px; */
+    /* align-items: center; */
+  }
+  
+nav .navbar-logo {
+    /* padding: 10px; */
+    color: #ffffff;
+  }
+
+.navbar-logo .logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.navbar-links li {
+    display: inline-block;
+  }
+
+.navbar-links li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+  }
+  
+.menu-button {
+    display: none;
+    font-size: 20px;
+    font-weight: 800;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  /* media queries for 1024 */
+@media (max-width: 1024px) {
+  .navbar {
+      padding-left: 60px;
+      padding-right: 60px;
+  }
+
+  nav .navbar-logo {
+    padding-top: 10px;
+  }
+}
+
+    /* Media query for mobile devices */
+@media (max-width: 768px) {
+        .navbar {
+          flex-wrap: wrap;
+          background: #000000;
+          padding: 20px;
+          /* padding-right: 80px; */
+          /* justify-content: flex-end; */
+        }
+      
+        nav .navbar-logo {
+          order: 1;
+          margin-right: auto;
+          padding-top: 10px;
+          font-weight: 800;
+          /* margin-bottom: 10px; */
+        }
+      
+        .navbar-links {
+            /* padding: 20px; */
+          width: 900px;
+          display: none;
+          order: 3;
+        }
+      
+        .navbar-links li {
+          margin-bottom: 5px;
+        }
+      
+        .menu-button {
+          display: block;
+          order: 2;
+          /* padding-right: 80px; */
+          padding: 10px;
+        }
+      
+        .show-navbar-links {
+          display: block !important;
+        }
+    }
+

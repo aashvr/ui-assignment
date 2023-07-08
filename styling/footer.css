@@ -1,0 +1,136 @@
+
+footer {
+    background-color: #000000;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 175px;
+    padding-right: 175px;
+    color: #777777;
+    letter-spacing: normal;
+}
+
+.footer-content {
+display: grid;
+grid-template-columns: minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1fr);
+}
+
+.footer-content .about {
+padding: 20px;
+}
+
+.about h2 {
+color: #ffffff;
+font-size: 18px;
+font-weight: 700;
+}
+
+.about p {
+margin-top: 30px;
+}
+
+.footer-content .newsletter {
+padding: 20px;
+}
+
+.newsletter h2 {
+color: #ffffff;
+font-size: 18px;
+font-weight: 700;
+}
+
+.newsletter p {
+margin-top: 30px;
+}
+
+.newsletter .email-input {
+margin-top: 20px;
+width: 100%;
+height: 40px;
+border-radius: 5px;
+border: none;
+font-size: 16px;
+overflow: hidden;
+color: #ffffff;
+}
+
+.email-input input {
+padding-left: 15px;
+padding-right: 15px;
+width: 80%;
+height: 100%;
+border: none;
+font-size: 16px;
+background-color: #000000;
+color:#ffffff;
+
+}
+
+.email-input .submit {
+background-image: linear-gradient(to right, rgba(122,127,251,255), rgba(136,240,251,255));
+padding: 12.5px;
+height: 40px;
+margin-left: -5px;
+}
+
+.footer-content .social {
+/* width: 30%; */
+padding: 20px;
+}
+
+.social h2 {
+color: #ffffff;
+font-size: 18px;
+font-weight: 700;
+}
+
+.social p {
+margin-top: 30px;
+}
+
+.social .social-logos {
+display: flex;
+justify-content: space-between;
+max-width: 60%;
+margin-top: 30px;
+color: #777777;
+}
+
+/* media queries for 1024px */
+@media (max-width:1024px){
+    
+        footer {
+            background-color: #000000;
+            padding-top: 120px;
+            padding-bottom: 120px;
+            padding-left: 100px;
+            padding-right: 100px;
+            color: #777777;
+            letter-spacing: normal;
+        }
+    
+        .footer-content {
+            grid-template-columns: minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1fr);
+        }
+
+        .social-logos .icon {
+            margin-right: 15px;
+        }
+} 
+
+@media (max-width: 768px) {
+
+    footer {
+        background-color: #000000;
+        padding-top: 70px;
+        /* padding-bottom: 120px; */
+        padding-left: 0px;
+        padding-right: 0px;
+        color: #777777;
+        letter-spacing: normal;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}

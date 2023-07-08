@@ -1,0 +1,145 @@
+
+.offerings {
+    /* margin-top: 120px; */
+    /* margin-bottom: 120px; */
+    text-align: center;
+    background-color: #f9f9ff;
+    padding-left: 175px;
+    padding-right: 175px;
+    padding-bottom: 120px;
+    padding-top: 120px;
+    
+}
+
+.offerings .heading {
+    justify-self: center;
+    /* font-size: 36px; */
+}
+
+.heading h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: #222222;
+}
+
+.heading p {
+    margin-top: 20px;
+    color: #777777;
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 26px;
+}
+
+.offer-list {
+    justify-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 30px;
+    margin-top: 80px;
+}
+
+
+.offer-box {
+    border-radius: 10px;
+    text-align: left;
+    padding: 50px;
+    /* padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px; */
+    background-color: #ffffff;
+    line-height: 26px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 30px; */
+    /* justify-content: space-evenly; */
+}
+
+.offer-box .offer-icon {
+    font-size: 60px;
+    text-align: left;;
+    color: #777777;
+}
+
+.offer-box h3 {
+    margin-top: 35px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+
+.offer-box p {
+    margin-top: 20px;
+    color: #777777;
+    font-size: 16px;
+    letter-spacing: normal;
+    /* line-height: 26px; */
+}
+
+
+/* media queries for 1024 */
+@media (max-width: 1024px) {
+    .offerings {
+        /* margin-top: 50px; */
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        /* text-align: center; */
+    }
+
+    .offer-box {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .offerings {
+        /* margin-top: 50px; */
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        /* text-align: center; */
+    }
+
+    .heading h2 {
+        font-size: 25px;
+    }
+
+    .heading p {
+        font-size: 16px;
+        letter-spacing: normal;
+        /* padding: 0px auto; */
+        padding-left: 10px;
+        padding-right: 10px;
+        /* text-align: center; */
+    }
+
+    .offer-list {
+        /* display: box; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        margin-top: 40px;
+        display: block;
+        align-items: center;
+    }
+
+    .offer-box {
+        /* margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 40px; */
+        margin: 40px auto;
+        width: 90%;
+        text-align: left;
+        padding: 50px 35px;
+        /* padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px; */
+        text-align: left;
+    }
+}
+

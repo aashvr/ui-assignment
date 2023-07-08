@@ -1,0 +1,106 @@
+
+.testimonials {
+    background-color: #f9f9ff;
+    /* background-color: red; */
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 175px;
+    padding-right: 175px;
+}
+
+.testimonials .heading {
+    justify-self: center;
+    /* font-size: 36px; */
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 20px;
+    margin-top: 80px;
+    align-items: center;
+}
+
+.testimonial-grid .testimonial-card {
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: left;
+    border: #777777;
+}
+
+.testimonial-card .desc{
+    margin-top: 20px;
+    color: #777777;
+    font-size: 16px;
+    line-height: 26px;
+    font-style: italic;
+}
+
+.testimonial-card .author {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    margin-top: 20px;
+}
+
+.testimonial-card .rating .checked {
+    color: orange;
+    margin-top: 20px;
+}
+
+/* media queries for 1024px */
+@media (max-width: 1024px) {
+    .testimonials{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .heading  h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .heading  p {
+        font-size: 15px;
+        color: #777777;
+        line-height: 26px;
+        letter-spacing: normal;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+@media (max-width: 768px) {
+    .testimonials{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .heading  h2 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .heading  p {
+        font-size: 15px;
+        color: #777777;
+        line-height: 26px;
+        letter-spacing: normal;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        /* justify-content: center; */
+    }
+
+}

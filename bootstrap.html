@@ -23,46 +23,83 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="temp.css" />
+    <link rel="stylesheet" href="styling/navbar.css" />
 
     <title>Responsive Header</title>
   </head>
 
   <body>
-    <footer>
-      <div class="footer-content">
-        <div class="about">
-          <h2>About Me</h2>
-          <p>
-            Do you want to be even more successful? Learn to love learning and
-            growth. The more effort you put into improving your skills,
-          </p>
-          <p>
-            Copyright ©2023 All rights reserved | This template is made with by
-            Colorlib
-          </p>
-        </div>
-        <div class="newsletter">
-          <h2>Newsletter</h2>
-          <p>Stay updated with our latest trends</p>
-          <div class="email-input">
-            <input type="text" placeholder="Enter Email Address" />
-            <span class="submit">
-              <i class="fa-solid fa-arrow-right"></i>
-            </span>
-          </div>
-        </div>
-        <div class="social">
-          <h2>Follow Me</h2>
-          <p>Let us be social</p>
-          <div class="social-logos">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-behance"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-dribbble"></i>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <h3 class="logo">MEETME</h3>
+      </div>
+      <ul class="navbar-links" id="navbarLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services Us</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="menu-button" id="menuButton">&#9776;</div>
+    </nav>
+
+    <section>
+      <div class="hero-section">
+        <div class="child">
+          <div class="content">
+            <img src="images/personal.webp" alt="" class="person-image" />
+            <div class="hero-desc">
+              <p class="hero-desc-title">
+                Hello Everybody, I am <br />
+                <span class="name">Donald McKinney</span>
+                <br />
+                <h3 class="designation">Junior UI/UX Developer</h3>
+              </p>
+              <p class="one-liner">
+                You will begin to realise why this exercise is called the
+                Dickens Pattern (with reference to the ghost showing Scrooge
+                some different futures)
+              </p>
+              <!-- <br /> -->
+              <div class="info">
+                <div>
+                  <div class="info-row">
+                    <svg class="lnr lnr-calendar-full icons">
+                      <use xlink:href="#lnr-calendar-full"></use>
+                    </svg>
+                    <div>31st December, 1992</div>
+                  </div>
+                  <div class="info-row">
+                    <svg class="lnr lnr-phone-handset icons">
+                      <use xlink:href="#lnr-phone-handset"></use>
+                    </svg>
+                    <div>44 (012) 6954 783</div>
+                  </div>
+                  <div class="info-row">
+                    <svg class="lnr lnr-envelope icons">
+                      <use xlink:href="#lnr-envelope"></use>
+                    </svg>
+                    <div>businessplan@donald</div>
+                  </div>
+                  <div class="info-row">
+                    <svg class="lnr lnr-home icons">
+                      <use xlink:href="#lnr-home"></use>
+                    </svg>
+                    <div>Santa monica bullevard</div>
+                  </div>
+                </div>
+              </div>
+              <div class="socials"> 
+                  <div class="icon"><i class="fa-brands fa-facebook-f logo"></i></div>
+                  <div class="icon"><i class="fa-brands fa-twitter logo"></i></div>
+                  <div class="icon"><i class="fa-brands fa-linkedin-in logo"></i></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Font Awesome JS -->
