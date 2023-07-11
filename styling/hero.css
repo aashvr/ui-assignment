@@ -112,6 +112,30 @@
     color: white;
 }
 
+/* media queries for 1440 */
+@media (max-width: 1440px) {
+    .hero-section {
+        margin-bottom: 100px;
+        /* height: ; */
+    }
+
+    .child {
+        width: 90%;
+        /* bottom: -40px; */
+        /* display: block; */
+    }
+    .content {
+        flex-direction: column;
+      }
+
+      .hero-desc {
+        padding-left: 10px;
+        padding-top: 40px;
+        text-align: left;
+        font-size: 14px;
+    }
+}
+
 /* media queries for 1024 */
 @media (max-width: 1024px) {
     .hero-section {

@@ -48,6 +48,8 @@
     padding-right: 20px; */
     background-color: #ffffff;
     line-height: 26px;
+    /* width: 70%; */
+    /* width: 500px; */
     /* display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -78,6 +80,27 @@
     /* line-height: 26px; */
 }
 
+.dash {
+    display: none;
+}
+
+
+
+/* media queries for 1024 */
+@media (max-width: 1440px) {
+    .offerings {
+        /* margin-top: 50px; */
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        /* text-align: center; */
+    }
+
+    .offer-box {
+        width: 70%;
+    }
+}
 
 /* media queries for 1024 */
 @media (max-width: 1024px) {
@@ -140,6 +163,25 @@
         padding-left: 20px;
         padding-right: 20px; */
         text-align: left;
+    }
+}
+
+/* media queries for 320px */
+@media (max-width: 320px) {
+    .arch {
+        display: block;
+    }
+    .dash {
+        display:inline;
+    }
+    .heading-offer h2 {
+        font-size: 15px;
+        /* padding-right: 20px; */
+        /* padding-left: 20px; */
+    }
+
+    .offer-box h3 {
+        font-size: 16px;
     }
 }
 

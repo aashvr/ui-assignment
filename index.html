@@ -11,13 +11,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+    /> -->
 
-    <!-- <link rel="stylesheet" href="style.css" /> -->
     <link rel="stylesheet" href="/styling/styles.css" />
     <link rel="stylesheet" href="/styling/navbar.css" />
     <link rel="stylesheet" href="/styling/hero.css" />
@@ -30,6 +29,7 @@
     <title>Meet Me</title>
   </head>
   <body>
+    <!-- navbar -->
     <nav class="navbar">
       <div class="navbar-logo">
         <h3 class="logo">MEETME</h3>
@@ -44,7 +44,7 @@
       </ul>
       <div class="menu-button" id="menuButton">&#9776;</div>
     </nav>
-    
+    <!-- hero section -->
     <section>
         <div class="hero-section">
           <div class="child">
@@ -102,7 +102,8 @@
         </div>
       </section>
 
-      <section>
+      <!-- about section -->
+    <section>
         <div class="container-fluid about-section">
           <div class="left-text">
             <h2>ABOUT MYSELF</h2>
@@ -188,9 +189,9 @@
           </div>
         </div>
       </section>
-
+      <!-- offerings section -->
       <section class="offerings">
-        <div class="heading">
+        <div class="heading-offer">
           <h2>OFFERINGS TO MY CLIENTS</h2>
           <p>
             If you are looking at blank cassettes on the web, you may be very
@@ -201,7 +202,7 @@
         <div class="offer-list">
           <div class="offer-box">
             <i class="fa-solid fa-city offer-icon"></i>
-            <h3>Artchitecture</h3>
+            <h3><span class="arch">Archi<span class="dash">-</span></span><span class="arch">tecture</span></h3>
             <p>
               If you are looking at blank cassettes on the web, you may be very
               confused at the difference in price. You may see some for as low as
@@ -229,9 +230,9 @@
         </div>
       </section>
 
-    
+      <!-- projects section -->
       <section class="projects">
-        <div class="heading">
+        <div class="heading-proj">
           <h2>OUR LATEST FEATURED PROJECTS</h2>
           <p>Who are in extremely love with eco friendly system.</p>
         </div>
@@ -303,8 +304,9 @@
         </div>
       </section>
     
+      <!-- testimonials section -->
       <section class="testimonials">
-        <div class="heading">
+        <div class="heading-test">
           <h2>TESTIMONIALS</h2>
           <p>
             If you are looking at blank cassettes on the web, you may be very
@@ -360,7 +362,8 @@
           </div>
         </div>
       </section>
-    
+
+      <!-- footer section -->
       <footer>
         <div class="footer-content">
           <div class="about">
@@ -396,7 +399,9 @@
           </div>
         </div>
       </footer>
+      
   </body>
+  <!-- script for navbar mobile view -->
   <script>
     var menuButton = document.getElementById("menuButton");
     var navbarLinks = document.getElementById("navbarLinks");

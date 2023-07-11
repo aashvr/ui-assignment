@@ -134,3 +134,14 @@ color: #777777;
         grid-gap: 20px;
     }
 }
+
+
+/* media queries for 200px */
+
+@media (max-width: 768px) {
+    .footer-content p {
+        /* font-size: 11px; */
+        width: 60%;
+    }
+
+}
